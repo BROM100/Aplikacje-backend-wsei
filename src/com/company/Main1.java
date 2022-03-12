@@ -15,8 +15,11 @@ public class Main1 {
         try (
                 FileOutputStream stream= new FileOutputStream("file.txt");
                 OutputStreamWriter writer = new OutputStreamWriter(stream, StandardCharsets.UTF_8);
-                ){
+                ) {
             writer.write(text);
+            writer.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
