@@ -11,8 +11,11 @@ public class Main5 {
 
 
         Date now = new Date();
+
         TimeZone.setDefault(TimeZone.getTimeZone("Europe/Warsaw"));
         System.out.println(now);
+
+        //UTC
         TimeZone.setDefault( TimeZone.getTimeZone("UTC"));
         System.out.println(now);
     }
