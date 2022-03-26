@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
 
-    @RequestMapping("/")
+    @RequestMapping("/example")
     public String index() {
         return "index"; // index.html w templates
 
     }
 
-    @RequestMapping("/example")
+    @RequestMapping("/")
     @ResponseBody // <-----------------------------
     public String hello() {
         return "Hello World!";
