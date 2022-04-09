@@ -19,9 +19,9 @@ public class UsersController {
     @PostConstruct
     private final void Create() {
 
-        users.put(1L, new UserEntity(1L, "Romek"));
-        users.put(2L, new UserEntity(2L, "Tomek"));
-        users.put(3L, new UserEntity(3L, "Atomek"));
+        users.put(1L, new UserEntity(1L, "Romek", "romek@romek.pl"));
+        users.put(2L, new UserEntity(2L, "Tomek", "tomek@tomek.pl"));
+        users.put(3L, new UserEntity(3L, "Atomek", "atomek@atomek.pl"));
     }
 
 
@@ -41,7 +41,7 @@ public class UsersController {
     public Object GetUsers(
 
     ) {
-        return users.values();
+        return users;
     }
 
 
@@ -55,13 +55,13 @@ public class UsersController {
     }
 
 
-    @RequestMapping("/users/add")
-    @ResponseBody
-    public Object AddUser(
-            @RequestParam Long id,
-            @RequestParam String name
-    ) {
-        users.put(id, new UserEntity(id, name));
-        return "added user: " + name;
-    }
+//    @RequestMapping("/users/add")
+//    @ResponseBody
+//    public Object AddUser(
+//            @RequestParam Long id,
+//            @RequestParam String name
+//    ) {
+//        users.put(id, new UserEntity(id, name));
+//        return "added user: " + name;
+//    }
 }
