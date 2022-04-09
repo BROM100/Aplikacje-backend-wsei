@@ -1,7 +1,6 @@
 package com.example.demo;
 
 public class UserEntity {
-
     private Long id;
     private String name;
 
@@ -10,10 +9,10 @@ public class UserEntity {
         this.name = name;
     }
     public Long getId(){
-        return id;
+        return this.id;
     }
     public void setId(Long id) {
-        this.id = id;
+        this.id =id;
     }
 
     public String getName() {

@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,55 +7,61 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.Map;
 
 @Controller
 public class UsersController {
 
-    private final Map<Long, UserEntity> usersMap = new HashMap<>();
+    private final Map<Long, UserEntity> users = new HashMap<>();
 
+    //Create default users map
     @PostConstruct
-    private void onCreate() {
-        usersMap.put(1L, new UserEntity(1L, "Romek"));
-        usersMap.put(2L, new UserEntity(2L, "Tomek"));
-        usersMap.put(3L, new UserEntity(3L, "Atomek"));
-    }
+    private final void Create() {
 
-
-    @RequestMapping("/users")
-    @ResponseBody
-    public Object getUsers(){
-        return usersMap;
+        users.put(1L, new UserEntity(1L, "Romek"));
+        users.put(2L, new UserEntity(2L, "Tomek"));
+        users.put(3L, new UserEntity(3L, "Atomek"));
     }
 
 
     @RequestMapping("/users/{id}/get")
     @ResponseBody
-    public Object getUserById(
+
+    public Object GetUserById(
             @PathVariable Long id
-    ){
-        return usersMap.get(id);
+    ) {
+        return users.get(id);
+    }
+
+
+    @RequestMapping("/users")
+    @ResponseBody
+
+    public Object GetUsers(
+
+    ) {
+        return users;
     }
 
 
     @RequestMapping("/users/{id}/remove")
     @ResponseBody
-    public Object RemoveUser(
+
+    public Object RemoveUserById(
             @PathVariable Long id
-    ){
-        usersMap.remove(id);
-        return usersMap;
+    ) {
+        return users.remove(id);
     }
 
-    @RequestMapping("/user/add")
+
+    @RequestMapping("/users/add")
     @ResponseBody
     public Object AddUser(
-            @PathVariable Long id
-    ){
-        usersMap.put(id, new UserEntity(id, "Romek"));
-        return usersMap.put(id, new UserEntity(id, "Romek"));
+            @RequestParam Long id,
+            @RequestParam String name
+    ) {
+        users.put(id, new UserEntity(id, name));
+        return "added user: " + name;
     }
 }
