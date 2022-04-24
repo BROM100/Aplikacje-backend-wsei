@@ -5,6 +5,9 @@ public class UserEntity {
     private String name;
     private String email;
 
+    public UserEntity() {
+    }
+
     public UserEntity(Long id, String name, String email) {
         this.id = id;
         this.name = name;

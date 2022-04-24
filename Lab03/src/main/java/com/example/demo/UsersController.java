@@ -72,4 +72,10 @@ public class UsersController {
         return users.remove(userEntity);
     }
 
+    //  curl -X POST -d '{"id":4, "name":"dupa", "email":"dupa@dupa.pl"}' -H 'Content-Type: application/json'  http://localhost:8080/user/create
+    @PostMapping("/user/create")
+    public Boolean CreateUser(@RequestBody UserEntity userEntity){
+        return users.add(userEntity);
+    }
+
 }
