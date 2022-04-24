@@ -62,7 +62,7 @@ public class UsersController {
     }
 
 
-    @GetMapping("/users/{id}/remove")
+    @DeleteMapping("/users/{id}")
     public Boolean RemoveUserById(
             @PathVariable Long id
     ) {
