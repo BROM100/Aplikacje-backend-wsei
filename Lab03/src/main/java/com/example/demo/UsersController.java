@@ -23,7 +23,7 @@ public class UsersController {
     }
 
 
-    @RequestMapping("/users/{id}/get")
+    @RequestMapping("/users/{id}")
     public UserEntity GetUserById(
             @PathVariable Long id
     ) {
@@ -78,7 +78,7 @@ public class UsersController {
     public UserEntity CreateUser(@RequestBody UserEntity userEntity){
         users.add(userEntity);
         return userEntity;
-        
+
     }
 
 }
