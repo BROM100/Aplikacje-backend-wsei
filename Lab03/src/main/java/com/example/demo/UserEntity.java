@@ -1,13 +1,9 @@
 package com.example.demo;
 
-import org.springframework.web.servlet.view.script.ScriptTemplateConfig;
-
 public class UserEntity {
     private Long id;
     private String name;
     private String email;
-
-
 
     public UserEntity(Long id, String name, String email) {
         this.id = id;
