@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.apache.catalina.User;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
@@ -74,8 +75,10 @@ public class UsersController {
 
     //  curl -X POST -d '{"id":4, "name":"dupa", "email":"dupa@dupa.pl"}' -H 'Content-Type: application/json'  http://localhost:8080/user/create
     @PostMapping("/user/create")
-    public Boolean CreateUser(@RequestBody UserEntity userEntity){
-        return users.add(userEntity);
+    public UserEntity CreateUser(@RequestBody UserEntity userEntity){
+        users.add(userEntity);
+        return userEntity;
+        
     }
 
 }
