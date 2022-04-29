@@ -14,7 +14,7 @@ public class UsersController {
 
     private final List<UserEntity> users = new LinkedList<>();
 
-    //Create default users map
+
     @PostConstruct
     private void Create() {
         users.add(new UserEntity(1L, "Romek", "romek@romek.pl"));

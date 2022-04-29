@@ -1,0 +1,22 @@
+
+Temat: Prosta aplikacją do zarządzania sprzedaży
+
+1.) Stowrzenie repozytorium dla projektu.
+2.) Stworzenie struktóry projektu.
+3.) Przygotowanie Docker file z definicja baazy danych(postrgres SQL) oraz kolejką rabittMQ.
+4.) Podpięcię flyway do projektu. 
+5.) Opracowanie modelu bazy danych. 
+6.) Stowrzenie modelu bazy danych po stronie Javy (impementacja encji). 
+7.) Przygotwanie mikroserwisu userów.
+8.) Przygotowanie modułu logowania/rejestracji dla użytkownika.
+9.) Przygotowanie mikroserwisu dla itemów(Produkty). 
+10.) Przygotowanie mikroserisu zamówień.
+11.) Implementacja funkcji wysyłki zamówienia(model JSON) na kolejkę RabbitMQ.
+12.) Implementacja zarządzania produktami.
+13.) Przygotowanie kolekcji requestów dla aplikacji w programie postman.
+14.) Testy jednostkowe Aplikacji. 
+15.) Test akceptacyjny E2E, happy path. 
+16.) Przygotowane wdrożenia aplikacji.
+
+
+
