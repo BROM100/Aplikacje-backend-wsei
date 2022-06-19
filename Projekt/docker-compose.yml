@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+    postgres:
+        image: postgres
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_DB: shop_db
+            POSTGRES_USER: LOCAL
+            POSTGRES_PASSWORD: LOCAL
+    activemq:
+        image: rmohr/activemq
+        ports:
+            - "61616:61616"
+            - "8161:8161"
