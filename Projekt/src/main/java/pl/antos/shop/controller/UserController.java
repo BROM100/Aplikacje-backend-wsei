@@ -49,6 +49,19 @@ public class UserController {
         if (optional.isPresent()) {
             User _user = optional.get();
             _user.setName(user.getName());
+            _user.setSurname(user.getSurname());
+            _user.setGender(user.getGender());
+            _user.setEmail(user.getEmail());
+            _user.setPhoneNumber(user.getPhoneNumber());
+            // TODO Hash password
+            _user.setPassword(user.getPassword());
+            _user.setStreet(user.getStreet());
+            _user.setStreetNumber(user.getStreetNumber());
+            _user.setCity(user.getCity());
+            _user.setPostalCode(user.getPostalCode());
+            _user.setCountryCode(user.getCountryCode());
+            _user.setActive(user.isActive());
+            _user.setConfirmed(user.isConfirmed());
 
             return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
         } else {
@@ -66,6 +79,42 @@ public class UserController {
         }
     }
 
+
+    @PutMapping("/users/enable/{id}")
+    public ResponseEntity<User> enableUser(@PathVariable("id") UUID id) {
+        Optional<User> optional = userRepository.findById(id);
+        if (optional.isPresent()) {
+            User _user = optional.get();
+            _user.setActive(true);
+            return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PutMapping("/users/disable/{id}")
+    public ResponseEntity<User> disableUser(@PathVariable("id") UUID id) {
+        Optional<User> optional = userRepository.findById(id);
+        if (optional.isPresent()) {
+            User _user = optional.get();
+            _user.setActive(false);
+            return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PutMapping("/users/confirm/{id}")
+    public ResponseEntity<User> confirmUser(@PathVariable("id") UUID id) {
+        Optional<User> optional = userRepository.findById(id);
+        if (optional.isPresent()) {
+            User _user = optional.get();
+            _user.setConfirmed(true);
+            return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 
 
 }
