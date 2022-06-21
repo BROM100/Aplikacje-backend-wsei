@@ -60,7 +60,7 @@ public class UserController {
             _user.setCity(user.getCity());
             _user.setPostalCode(user.getPostalCode());
             _user.setCountryCode(user.getCountryCode());
-            _user.setActive(user.isActive());
+            _user.setEnabled(user.isEnabled());
             _user.setConfirmed(user.isConfirmed());
 
             return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
@@ -85,7 +85,7 @@ public class UserController {
         Optional<User> optional = userRepository.findById(id);
         if (optional.isPresent()) {
             User _user = optional.get();
-            _user.setActive(true);
+            _user.setEnabled(true);
             return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -97,7 +97,7 @@ public class UserController {
         Optional<User> optional = userRepository.findById(id);
         if (optional.isPresent()) {
             User _user = optional.get();
-            _user.setActive(false);
+            _user.setEnabled(false);
             return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

@@ -41,10 +41,14 @@ public class User {
     private String postalCode;
     @Column(name = "country_code")
     private String countryCode;
-    @Column(name = "active")
-    private boolean active;
+    @Column(name = "enabled")
+    private boolean enabled;
     @Column(name = "confirmed")
     private boolean confirmed;
     @Column(name = "created_at")
     Instant createdAt;
+    @Column(name = "username")
+    private String username;
+    @Column(name = "role")
+    private String role;
 }
