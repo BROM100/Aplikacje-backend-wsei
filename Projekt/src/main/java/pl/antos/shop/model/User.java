@@ -8,6 +8,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.UUID;
+import lombok.*;
 
 @Entity
 @Table(name = "users")
@@ -15,6 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder(toBuilder = true)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

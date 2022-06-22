@@ -36,7 +36,7 @@ public class UserController {
     @PostMapping("/users")
     public ResponseEntity<User> createUser(@RequestBody User user) {
         try {
-            User _user = userRepository.save(user);
+            User _user = userRepository.save(user.toBuilder().id(UUID.randomUUID()).build());
             return new ResponseEntity<>(_user, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -52,16 +52,13 @@ public class UserController {
             _user.setSurname(user.getSurname());
             _user.setGender(user.getGender());
             _user.setEmail(user.getEmail());
-            _user.setPhoneNumber(user.getPhoneNumber());
-            // TODO Hash password
-            _user.setPassword(user.getPassword());
+            _user.setPhoneNumber(user.getPhoneNumber());;
             _user.setStreet(user.getStreet());
             _user.setStreetNumber(user.getStreetNumber());
             _user.setCity(user.getCity());
             _user.setPostalCode(user.getPostalCode());
             _user.setCountryCode(user.getCountryCode());
-            _user.setEnabled(user.isEnabled());
-            _user.setConfirmed(user.isConfirmed());
+
 
             return new ResponseEntity<>(userRepository.save(_user), HttpStatus.OK);
         } else {
