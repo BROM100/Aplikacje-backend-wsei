@@ -1,0 +1,729 @@
+{
+  "info": {
+    "_postman_id": "92441e3c-280d-404d-a8ed-c7ca8ec4288e",
+    "name": "Shop application",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/orders?page=0&size=10",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Cookie",
+            "value": "pga4_session=4c07576c-0296-4b2d-bc4b-ae96d8e7e7ac!ZDiEOAfmjXN5fv5S8hj2OBXgRAw=; PGADMIN_LANGUAGE=en; JSESSIONID={{session_id}}"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Linux\""
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/orders?page=0&size=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "http://localhost:8080/orders?page=0&size=10",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7"
+              },
+              {
+                "key": "Cache-Control",
+                "value": "max-age=0"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Cookie",
+                "value": "pga4_session=4c07576c-0296-4b2d-bc4b-ae96d8e7e7ac!ZDiEOAfmjXN5fv5S8hj2OBXgRAw=; PGADMIN_LANGUAGE=en; JSESSIONID={{session_id}}"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "key": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "key": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Linux\""
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/orders?page=0&size=10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "key": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/hal+json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 22 Jun 2022 19:42:30 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_embedded\": {\n        \"orders\": [\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-21T16:40:12.961066Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/ea195942-4c4c-4c47-a3cd-ff13431a4cba\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/ea195942-4c4c-4c47-a3cd-ff13431a4cba\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-21T16:49:45.055092Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/edfee505-874a-4b15-ab1c-da62cb1ae35c\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/edfee505-874a-4b15-ab1c-da62cb1ae35c\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-21T16:51:31.591364Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/6fb76e68-c3be-4e7b-9582-1a5ffa37269d\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/6fb76e68-c3be-4e7b-9582-1a5ffa37269d\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-21T16:53:16.239866Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/aa5dfebd-fc4d-4f0b-a9a1-b759e0f8a29e\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/aa5dfebd-fc4d-4f0b-a9a1-b759e0f8a29e\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-22T16:41:06.780644Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/2182cbe1-6c73-4dc5-b055-480981c0007a\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/2182cbe1-6c73-4dc5-b055-480981c0007a\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-22T19:33:06.851291Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/a8ba841b-054d-4cfd-9e4c-dad97ae094cb\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/a8ba841b-054d-4cfd-9e4c-dad97ae094cb\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver after 16:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-22T19:38:18.186058Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/104f213b-4882-438a-96f9-4de6a0074071\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/104f213b-4882-438a-96f9-4de6a0074071\"\n                    }\n                }\n            },\n            {\n                \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n                \"status\": \"NEW\",\n                \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n                \"invoiceAddress\": \"\",\n                \"specialNotes\": \"deliver before 10:00\",\n                \"reference\": \"DPD123456\",\n                \"createdAt\": \"2022-06-22T19:41:54.420836Z\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/orders/281a00fd-19b1-45dd-837f-fefdd80d1e86\"\n                    },\n                    \"order\": {\n                        \"href\": \"http://localhost:8080/orders/281a00fd-19b1-45dd-837f-fefdd80d1e86\"\n                    }\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/orders?page=0&size=10\"\n        },\n        \"profile\": {\n            \"href\": \"http://localhost:8080/profile/orders\"\n        }\n    },\n    \"page\": {\n        \"size\": 10,\n        \"totalElements\": 8,\n        \"totalPages\": 1,\n        \"number\": 0\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "http://localhost:8080/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Cookie",
+            "value": "pga4_session=4c07576c-0296-4b2d-bc4b-ae96d8e7e7ac!ZDiEOAfmjXN5fv5S8hj2OBXgRAw=; PGADMIN_LANGUAGE=en; JSESSIONID={{session_id}}"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Linux\""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n    \"status\": \"NEW\",\n    \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n    \"invoiceAddress\": \"\",\n    \"specialNotes\": \"deliver before 10:00\",\n    \"reference\": \"DPD123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "http://localhost:8080/api/orders",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7"
+              },
+              {
+                "key": "Cache-Control",
+                "value": "max-age=0"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Cookie",
+                "value": "pga4_session=4c07576c-0296-4b2d-bc4b-ae96d8e7e7ac!ZDiEOAfmjXN5fv5S8hj2OBXgRAw=; PGADMIN_LANGUAGE=en; JSESSIONID={{session_id}}"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "key": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "key": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Linux\""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n    \"status\": \"NEW\",\n    \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n    \"invoiceAddress\": \"\",\n    \"specialNotes\": \"deliver before 10:00\",\n    \"reference\": \"DPD123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "orders"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 22 Jun 2022 19:42:05 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"281a00fd-19b1-45dd-837f-fefdd80d1e86\",\n    \"items\": \"Mac Book Pro 2022, Magic Mouse, Magic Keyboard\",\n    \"status\": \"NEW\",\n    \"address\": \"Jan Kowalski Street 1 City 12-123 PL\",\n    \"invoiceAddress\": \"\",\n    \"specialNotes\": \"deliver before 10:00\",\n    \"reference\": \"DPD123456\",\n    \"createdAt\": \"2022-06-22T19:41:54.420836Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "http://localhost:8080/users?page=0&size=10",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Cookie",
+            "value": "pga4_session=4c07576c-0296-4b2d-bc4b-ae96d8e7e7ac!ZDiEOAfmjXN5fv5S8hj2OBXgRAw=; PGADMIN_LANGUAGE=en; JSESSIONID={{session_id}}"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "document"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "navigate"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "none"
+          },
+          {
+            "key": "Sec-Fetch-User",
+            "value": "?1"
+          },
+          {
+            "key": "Upgrade-Insecure-Requests",
+            "value": "1"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Linux\""
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/users?page=0&size=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "users"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "http://localhost:8080/users?page=0&size=10",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7"
+              },
+              {
+                "key": "Cache-Control",
+                "value": "max-age=0"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Cookie",
+                "value": "pga4_session=4c07576c-0296-4b2d-bc4b-ae96d8e7e7ac!ZDiEOAfmjXN5fv5S8hj2OBXgRAw=; PGADMIN_LANGUAGE=en; JSESSIONID={{session_id}}"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "document"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "navigate"
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "none"
+              },
+              {
+                "key": "Sec-Fetch-User",
+                "value": "?1"
+              },
+              {
+                "key": "Upgrade-Insecure-Requests",
+                "value": "1"
+              },
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Linux\""
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/users?page=0&size=10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Access-Control-Request-Method"
+            },
+            {
+              "key": "Vary",
+              "value": "Access-Control-Request-Headers"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/hal+json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 22 Jun 2022 19:43:21 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_embedded\": {\n        \"users\": [\n            {\n                \"name\": \"Jan\",\n                \"surname\": \"Kowalski\",\n                \"gender\": \"male\",\n                \"email\": \"jan.kowalski@abc.pl\",\n                \"phoneNumber\": \"+48999888777\",\n                \"password\": \"$2a$10$S4ibX1nikHgG7yx17AlgyOJregyLqznuEa26q88tbZM9PXhLUa6Hy\",\n                \"street\": \"Street\",\n                \"streetNumber\": \"1\",\n                \"city\": \"City\",\n                \"postalCode\": \"12-123\",\n                \"countryCode\": \"PL\",\n                \"enabled\": true,\n                \"confirmed\": true,\n                \"createdAt\": \"2022-06-20T19:17:07.258545Z\",\n                \"username\": \"admin\",\n                \"role\": \"ADMIN\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/users/123e4567-e89b-12d3-a456-556642440000\"\n                    },\n                    \"user\": {\n                        \"href\": \"http://localhost:8080/users/123e4567-e89b-12d3-a456-556642440000\"\n                    }\n                }\n            },\n            {\n                \"name\": \"Anna\",\n                \"surname\": \"Nowak\",\n                \"gender\": \"female\",\n                \"email\": \"anna.nowak@abc.pl\",\n                \"phoneNumber\": \"+48111888777\",\n                \"password\": \"$2a$10$S4ibX1nikHgG7yx17AlgyOJregyLqznuEa26q88tbZM9PXhLUa6Hy\",\n                \"street\": \"Street\",\n                \"streetNumber\": \"2\",\n                \"city\": \"City\",\n                \"postalCode\": \"12-123\",\n                \"countryCode\": \"PL\",\n                \"enabled\": true,\n                \"confirmed\": true,\n                \"createdAt\": \"2022-06-20T19:19:49.890814Z\",\n                \"username\": \"user\",\n                \"role\": \"USER\",\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/users/123e4567-e89b-12d3-a456-556642440001\"\n                    },\n                    \"user\": {\n                        \"href\": \"http://localhost:8080/users/123e4567-e89b-12d3-a456-556642440001\"\n                    }\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/users?page=0&size=10\"\n        },\n        \"profile\": {\n            \"href\": \"http://localhost:8080/profile/users\"\n        }\n    },\n    \"page\": {\n        \"size\": 10,\n        \"totalElements\": 2,\n        \"totalPages\": 1,\n        \"number\": 0\n    }\n}"
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "session_id",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
