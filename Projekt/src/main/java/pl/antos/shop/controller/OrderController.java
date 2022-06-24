@@ -31,7 +31,10 @@ public class OrderController {
     @PostMapping("/orders")
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
         try {
-            Order _order = orderRepository.save(order.toBuilder().id(UUID.randomUUID()).build());
+            Order _order = orderRepository.save(order.toBuilder()
+                    .id(UUID.randomUUID())
+                    .createdAt(Instant.now())
+                    .build());
             String jsonOrder = "{}";
             try {
                 ObjectMapper mapper = new ObjectMapper();
